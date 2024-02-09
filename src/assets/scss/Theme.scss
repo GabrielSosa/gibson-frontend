@@ -1,0 +1,168 @@
+// Styles
+
+// Main styles
+
+@import "./app.scss";
+
+// Adminto Icons
+@import "./icons.scss";
+
+.tableContainer{
+    border-radius: 20px;
+    height: calc(100vh - 250px);
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.tableContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.charge-image-container{
+    max-height: 200px;
+}
+.charge-image{
+    height: 200px;
+}
+.charge-image-container .remove{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 5px;
+    background: white;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: red;
+}
+.file-preview{
+    width: 15vw;
+    height: 15vw;
+}
+.anexos-list{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    .anexo-item{
+        width: 23%;
+        margin: 5px;
+        .img-container{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .description{
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        
+    }
+}
+.address-lines{
+    max-width: 250px;
+}
+
+.separator{
+    margin-top: -10px;
+}
+.pos-print{
+    font-size: 13px;
+    padding: 20px;
+    line-height: 16px;
+}
+.small-text{
+    font-size: 12px;
+}
+
+.quantity-size{
+    width: 50px;
+}
+.unit-price{
+    width: 120px;
+}
+
+.verticalTableHeader {
+    text-align:center;
+    white-space:nowrap;
+    transform-origin:50% 50%;
+    transform: rotate(-90deg);
+
+}
+.verticalTableHeader:before {
+    content:'';
+    padding-top:110%;/* takes width as reference, + 10% for faking some extra padding */
+    display:inline-block;
+    vertical-align:middle;
+}
+.fit-table{
+    text-align:center;
+    table-layout : fixed;
+}
+.sticky-buttons{
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    left: 252px;
+    background-color: var(--ct-body-bg);
+}
+@media (max-width: 820px){
+
+    .sticky-buttons{
+        width: 100%;
+        position: fixed;
+        top: 70px;
+        left: 22px;
+        background-color: var(--ct-body-bg);
+    }   
+}
+.sigCanvas{
+    border: 5px solid black;
+}
+.vector-img{
+    img {
+        width: 100%;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+    }
+}
+
+.container-loading{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ReactSimpleImageViewer{
+    top: 70px;
+}
+.uploadImage input{
+    display: none;
+}
+.display-flex{
+    display: flex;
+}
+.img-container{
+    position: relative;
+}
+.check-icon{
+    position: absolute;
+    padding-left: 10px;
+    font-size: 40px;
+}

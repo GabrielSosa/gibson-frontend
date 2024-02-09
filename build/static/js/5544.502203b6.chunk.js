@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkadminto_react=self.webpackChunkadminto_react||[]).push([[5544],{25544:function(e,t,a){a.r(t);var i=a(51649),l=a(80184);t.default=function(){return(0,i.Tt)({title:"Detalle de tipo de vehiculo",breadCrumbItems:[{path:"/settings/vehicle-type-detail",label:"Configuracion"},{path:"/settings/vehicle-type-detail",label:"Detalle de tipo de vehiculo",active:!0}]}),(0,l.jsx)(l.Fragment,{})}}}]);
+//# sourceMappingURL=5544.502203b6.chunk.js.map
